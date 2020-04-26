@@ -1,0 +1,238 @@
+body{
+    font-family: 'arial';
+    font-size: 20px;
+    width: 90%;
+    margin: 10px auto;
+    background-image: linear-gradient(to bottom, orange, purple);
+    /* background-color: purple; */
+    /* background: rgba(14, 7, 54, 0.616); */
+    color: rgb(1, 1, 19);
+}
+
+/* NAV BAR */
+.nav_bar{
+    text-align: center;
+    margin: 10px auto;
+}
+
+.nav_bar li{
+    display: inline;
+    margin: 20px;
+    border: solid 1px rgb(1, 1, 19);
+    padding: 10px;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.nav_bar li:hover{
+    color: orange;
+    background-color: rgb(1, 1, 19);
+    cursor: pointer;
+    transition: 2s;
+}
+
+.nav_bar a{
+    text-decoration: none;
+    color: rgb(1, 1, 19);
+}
+
+/* PROFILE */
+.profile{
+    display: grid;
+    grid-template-columns: 3fr 9fr;
+    border-bottom: solid 2px rgb(1, 1, 19);
+    margin: 20px auto;
+}
+
+.pro_pic{
+    color: rgb(1, 1, 19);
+    background-color: rgb(95, 2, 41);
+    margin: 10px auto;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.pro_pic:hover{
+    transform: rotateX(360deg);
+    transition: 4s;
+    color: orange;
+}
+
+.pro_pic h1{
+    font-size: 90px;
+    margin: auto;
+    text-align: center;
+}
+
+.fixed{
+    position: fixed;
+    top: 0;
+}
+
+.credentials li{
+    list-style-type: none;
+    margin: 10px;
+    box-shadow: gray 1px 1px 1px 2px;
+    border-radius: 6px 0px;
+    /* font-weight: bold; */
+}
+
+.credentials li span{
+    color: rgb(95, 2, 41);
+    font-weight: bold;
+}
+
+.credentials li:hover{
+    transition: 2s;
+    background-color: rgb(1, 1, 19);
+    color: orange;
+}
+
+/* CONTACT DETAILS SECTION */
+.contact_details{
+    margin: auto;
+    text-align: center;
+    box-shadow: gray 1px 1px 1px 2px;
+    font-weight: bold;
+    border-radius: 6px;
+}
+
+.contact_details:hover{
+    background-image: linear-gradient(to bottom right, rgb(95, 2, 41), rgb(1, 1, 19));
+    color: skyblue;
+    transition: 3s;
+}
+
+.contact_details li{
+    text-align: justify;
+    list-style: none;
+    font-size: 20px;
+    margin: 10px;
+}
+
+/* SERVICES */
+.services{
+    margin: 20px auto;
+    padding: 10px;
+    width: 50%;
+    border-radius: 6px;
+    box-shadow: gray 1px 1px 1px 2px;
+    /* animation: aniset 10s 2s infinite ease-in-out; */
+}
+
+.services li{
+    width: 70%;
+    list-style: none;
+    padding: 10px;
+    border: solid 4px rgb(95, 2, 41);
+    border-radius: 6px;
+    background-color: rgb(95, 2, 41);
+    color: white;
+    margin: 20px;
+    font-weight: bold;
+    animation: aniset 10s 2s infinite ease-in-out;
+}
+
+/* SKILLS */
+.skills{
+    margin: 10px auto;
+    padding: 10px;
+    width: 50%;
+    border-radius: 6px;
+    box-shadow: gray 1px 1px 1px 2px;
+}
+
+
+.skills li{
+    list-style: none;
+    padding: 10px;
+    border: solid 4px rgb(95, 2, 41);
+    border-radius: 6px;
+    background-color: rgb(95, 2, 41);
+    color: white;
+    margin: 20px;
+    font-weight: bold;
+    width: 30%;
+}
+
+/* PROJECTS */
+.project_section{
+    text-align: center;
+    width: 100%;
+    height: 900px;
+    border-radius: 6px;
+    box-shadow: gray 1px 1px 1px 2px;
+    /* border: solid 1px rgb(1, 1, 19); */
+}
+
+.projects{
+    display: grid;
+    grid-template-columns: 2fr 10fr;
+    margin: auto;
+    width: 50%;
+    height: 200px;
+}
+
+
+.snap_shot img{
+    margin: 10px auto;
+    width: 200px;
+    height: 200px;
+    border-radius: 6px 0px 0px 6px;
+}
+
+.project_info{
+    margin: 10px 0px;
+    height: 200px;
+    border-radius: 0px 6px 6px 0px;
+    background-color: rgb(95, 2, 41);
+}
+
+/* FOOTER */
+footer{
+    text-align: center;
+    margin: 20px;
+    font-weight: bold;
+    color: rgb(1, 1, 19);
+}
+
+/* KEY FRAMES */
+
+@keyframes aniset{
+    0%{
+        transform: rotate(0deg);
+        color: orange;
+        filter: grayscale(0);
+    }
+
+    20%{
+        transform: rotateX(100deg);
+        color: purple;
+        filter: grayscale(20);
+    }
+
+    40%{
+        transform: rotateX(360deg);
+        color: orange;
+        filter: grayscale(30);
+    }
+
+    60%{
+        transform: rotateY(200deg);
+        color: blue;
+        filter: greyscale(80);
+    }
+
+    80%{
+        transform: rotateY(200deg);
+        color:aqua;
+        filter: grayscale(90);
+    }
+
+    100%{
+        transform: rotateX(0deg);
+        color: rgb(95, 2, 41);
+        filter: greyscale(0);
+    }
+}
