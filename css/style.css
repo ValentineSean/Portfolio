@@ -13,12 +13,14 @@ body{
     /* width: 100px; */
     font-family: arial;
     padding-top: 100px;
+    /* background-color: rgb(6, 6, 136); */
     /* border: solid 9px green; */
 }
 
 .container{
     margin: auto;
     width: 100%;
+    background-color: rgba(255, 145, 0, 0.164);
     /*min-height: 1990px;*/
     /* border: solid 7px orange; */
 }
@@ -27,6 +29,10 @@ body{
 /* NAVIGATION BAR */
 .sub_container{
     position: static;
+    border: solid 1px rgb(4, 4, 77);
+    background-color: rgb(4, 4, 77);
+    height: 70px;
+    /* margin: 0; */
 }
 
 .sub_container header{
@@ -36,7 +42,7 @@ body{
     height: 100vh;
     width: 100%;
     /* background: rgb(4, 183, 4); */
-    background: lime;
+    background: rgb(4, 4, 77);
     transition: 1s;
     padding: 0 100px;
     box-sizing: border-box;
@@ -65,8 +71,7 @@ body{
 nav{
     position: absolute;
     text-align: center;
-    /* border: solid 6px red; */
-    color: black;
+    color: #fff;
     margin: auto;
     left: 0;
     right: 0;
@@ -74,9 +79,7 @@ nav{
 }
 
 nav ul{
-    /* border: solid 1px white; */
     position: absolute;
-    /* margin: auto; */
     width: 100%;
     height: 100%;
     text-align: center;
@@ -110,7 +113,7 @@ nav ul li{
 }
 
 nav ul li a{
-    color: rgb(121, 85, 72);
+    color: white;
     /* padding: 10px 15px; */
     text-decoration: none;
 }
@@ -131,7 +134,7 @@ ul li a .icon .fa{
     display: inherit;
     font-size: 24px;
     transition: 0.5s;
-    color: rgb(121, 85, 72);
+    color: rgb(255, 145, 0);
 }
 
 ul li a .icon .fa:last-child{
@@ -140,6 +143,7 @@ ul li a .icon .fa:last-child{
 
 ul li a:hover .icon .fa{
     transform: translateY(-100%);
+    color: rgb(255, 145, 0);
 }
 
 ul li a .name{
@@ -153,7 +157,7 @@ ul li a .name{
 ul li a .name span{
     display: block;
     position: relative;
-    color: rgb(121, 85, 72);
+    color: #fff;
     font-size: 18px;
     line-height: 20px;
     transition: 0.5s;
@@ -168,7 +172,7 @@ ul li a .name span:before{
     left: 0;
     width: 100%;
     height: 100%;
-    color: #fff;
+    color: rgb(255, 145, 0);
 }
 
 ul li a:hover .name span{
@@ -193,28 +197,36 @@ section p{
 /*--------------------------------------------------------------------------------------------------------*/
 /* ABOUT SECTION */
 .sub_container2{
-    margin-top: 65px;
+    /* border: solid 5px rgb(4, 4, 77); */
 }
 .about_text{
-    background-color: rgb(121, 85, 72);
+    font-family: sans-serif;
+    background-color: rgb(4, 4, 77);
     color: #fff;
-    border: solid 1px rgb(121, 85, 72);
-    font-weight: bold;
+    margin: auto;
     padding: 10px;
+}
+
+.about_text:hover li a{
+    text-decoration: underline;
+    color: rgb(255, 145, 0);
 }
     
 .about_text h2{
     text-align: center;
+    color: rgb(255, 145, 0);
 }
 
 .about_text li{
     margin: 20px 0;
     font-size: 20px;
+    text-align: center;
+    list-style: none;
 }
 
 .about_text li a{
     text-decoration: none;
-    color: lime;
+    color: rgb(135, 231, 240);
     font-style: italic;
 }
 
@@ -229,42 +241,47 @@ section p{
     height: 600px;
     width: 100%;
     margin: auto;
+    background-color: rgb(4, 4, 77);
 }
 
 section.sec1{
     height: 100%;
     /* position: absolute; */
-    background: url(../images/web_dev.png);
+    background: url(../img/img\ \(5\).jpg);
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
+    opacity: 0.5;
 }
 
 section.sec2{
     height: 100%;
     /* position: absolute; */
-    background: url(../images/software_dev2.png);
+    background: url(../img/macbook2.jpg);
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
+    opacity: 0.7;
 }
 
 section.sec3{
     height: 100%;
     /* position: absolute; */
-    background: url(../images/freelancer.jpeg);
+    background: url(../img/Pic5.jpg);
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
+    opacity: 0.7;
 }
 
 section.sec4{
     height: 100%;
     /* position: absolute; */
-    background: url(../images/while_cod.png);
+    background: url(../img/Pic1.jpg);
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
+    opacity: 0.5;
 }
 
 /*-----------------------------------------------------------------------------------------------------*/
@@ -288,7 +305,7 @@ section.sec4{
     right: 0;
     width: 10px;
     /* height: 100%; */
-    background: linear-gradient(to top, rgb(121, 85, 72), lime);
+    background: linear-gradient(to top, rgb(4, 4, 77), rgb(135, 231, 240), rgb(6, 6, 136), rgb(255, 145, 0));
     animation: animate_scroll_bar 5s linear infinite;
     /* z-index: 15; */
 }
@@ -300,7 +317,7 @@ section.sec4{
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to top, rgb(121, 85, 72), lime);
+    background: linear-gradient(to top, rgb(4, 4, 77), rgb(135, 231, 240), rgb(6, 6, 136), rgb(255, 145, 0));
     filter: blur(10px);
 }
 
@@ -311,7 +328,7 @@ section.sec4{
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to top, rgb(121, 85, 72), lime);
+    background: linear-gradient(to top, rgb(4, 4, 77), rgb(135, 231, 240), rgb(6, 6, 136), rgb(255, 145, 0));
     filter: blur(30px);
 }
 
@@ -319,31 +336,30 @@ section.sec4{
 /* LANGUAGES SECTION */
 .sub_container4{
     text-align: center;
-    /* height: 990px; */
+    padding: 10px;
 }
 
 .sub_container4 h2.languages_heading{
-    color: rgb(121, 85, 72);
-    font-size: 48px;
+    color: rgb(4, 4, 77);
+    font-size: 30px;
 }
 
 .sub_sub4{
     display: grid;
     grid-template-columns: 4fr 4fr 4fr;
-    padding: 10px;
 }
 
 .box{
     height: 150px;
     width: 150px;
     margin: 15px auto;
-    background: rgb(121, 85, 72);
+    background: rgb(4, 4, 77);
     align-items: center;
     align-content: center;
     text-align: center;
     border-radius: 15px;
     overflow: hidden;
-    box-shadow: 0 5px 20px rgb(121, 85, 72);
+    box-shadow: 1px 1px 5px rgba(4, 4, 77, 0.986);
     /* border: solid 2px blueviolet; */
     z-index: 0;
     vertical-align: middle;
@@ -366,6 +382,10 @@ section.sec4{
     z-index: 0;
 }
 
+.box:hover{
+    box-shadow: 1px 1px 1px rgba(255, 145, 0, 0.691);
+}
+
 .box:hover .img_box{
     transform: translateY(-10px);
 }
@@ -382,8 +402,8 @@ section.sec4{
 .details{
     bottom: 0;
     left: 0;
-    background: rgb(121, 85, 72);
-    color: #fff;
+    background: rgb(4, 4, 77);
+    color: rgb(255, 145, 0);
     width: 100%;
     height: 65px;
     box-sizing: border-box;
@@ -404,8 +424,8 @@ section.sec4{
 }
 
 .sub_container6 h2{
-    color: rgb(121, 85, 72);
-    font-size: 48px;
+    color: rgb(4, 4, 77);
+    font-size: 30px;
     text-align: center;
 }
 .sub_sub6{
@@ -415,22 +435,22 @@ section.sec4{
 
 .sub_sub6 .skill{
     /* border: solid 5px black; */
-    margin: 10px;
+    margin: 20px;
     padding: 10px;
     text-align: center;
-    background-color: rgb(121, 85, 72);
+    background-color: rgb(4, 4, 77);
     color: #fff;
-    box-shadow: 0 5px 20px rgb(121, 85, 72);
+    box-shadow: 1px 1px 5px rgba(4, 4, 77, 0.986);
     border-radius: 6px;
     font-weight: bold;
 }
 
 .sub_sub6 .skill:hover{
     opacity: 1;
-    transform: scale(0.8);
+    transform: scale(0.9);
     transition: 0.5s;
-    color: lime;
-    box-shadow: 0 0 1px 1px lime;
+    color: rgb(255, 145, 0);
+    box-shadow: 0 0 1px 1px rgba(255, 145, 0, 0.691);
 }
 
 .sub_sub6 .skills:before{
@@ -440,76 +460,47 @@ section.sec4{
     left: 0;
     width: 100%;
     height: 50%;
-    background: rgba(255, 255, 255, .1);
+    /* background: rgba(255, 255, 255, .1); */
     z-index: 10;
 }
 
-.sub_sub6 .skills .Name{
-    position: relative;
-    width: 110px;
-    /* text-align: right; */
-    color: #fff;
-    font-weight: bold;
-    margin-top: -2px;
-}
-
-.sub_sub6 .skills .Value{
-    position: relative;
-    width: 40px;
-    text-align: left;
-    color: lime;
-    font-weight: bold;
-    margin-top: -2px;
-}
-
-.sub_sub6 .skills .percent{
-    position: relative;
-    width: calc(100% - 150px);
-    height: 20px;
-    margin: 0 10px;
-    border-radius: 10px;
-    background: #151515;
-    box-shadow: inset 0 0 10px #000;
-    overflow: hidden;
-}
-
-.sub_sub6 .skills .percent .progress{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 70%;
-    height: 100%;
-    border-radius: 10px;
-    background: lime;
-    box-shadow: inset 0 0 20px #000;
-    animation: animate_skills 2s ease-in-out forwards;
-}
-
+/* ------------------------------------------------------------------------- */
 /* PROJECTS SECTION */
+.sub_container8{
+    padding: 10px;
+}
+
 .sub_container8 h2{
-    color: rgb(121, 85, 72);
-    font-size: 48px;
+    color: rgb(4, 4, 77);
+    font-size: 30px;
     text-align: center;
 }
 .sub_sub8{
-    padding: 10px;
+    margin: 20px;
 }
 .project{
-    box-shadow: 1px 1px 5px;
+    box-shadow: 1px 1px 5px rgba(4, 4, 77, 0.986);
+    border-radius: 6px;
     margin: 10px auto;
     padding: 10px;
 }
 
 .project a{
     text-decoration: none;
-    color: rgb(121, 85, 72);
+    color: rgb(4, 4, 77);
     font-weight: bold;
 }
 
+
 .project a:hover{
-    color: lime;
+    color: rgba(4, 4, 77, 0.986);
     font-style: italic;
     transition: 0.5s;
+}
+
+.project a:hover u h3{
+    transition: 0.5s;
+    color: rgb(255, 145, 0);
 }
 
 /* CONTACT SECTION */
@@ -518,8 +509,8 @@ section.sec4{
 }
 .sub_container10 h2{
     text-align: center;
-    font-size: 48px;
-    color: rgb(121, 85, 72);
+    font-size: 30px;
+    color: rgb(4, 4, 77);
 }
 
 .contact_details{
@@ -539,32 +530,36 @@ section.sec4{
 
 .contact_details li .fa{
     font-size: 25px;
-    color: lime;
+    color: rgb(255, 145, 0);
 }
 
 .contact_details li span{
-    color: rgb(121, 85, 72);
+    color: rgb(4, 4, 77);
     font-weight: bolder;
+}
+
+.contact_details li span:hover{
+    cursor: cell;
 }
 
 .contact_details li span a{
     text-decoration: none;
-    color: rgb(121, 85, 72);
+    color: rgb(4, 4, 77);
 }
 
 .contact_details li span a:hover{
-    color: lime;
+    color: rgb(255, 145, 0);
     transition: 0.5s;
 }
 
 /* FOOTER SECTION */
 footer{
     color: #fff;
-    background: lime;
+    background: rgb(4, 4, 77);
     text-align: center;
     padding: 10px;
     margin-bottom: 0;
-    font-size: 25px;
+    font-size: 15px;
     font-weight: bold;
 }
 
@@ -573,11 +568,13 @@ footer{
 /* KEY FRAMES */
 @keyframes animate_scroll_bar{
     0%, 100%{
-        filter: hue-rotate(0deg);
+        /* filter: hue-rotate(90deg); */
+        filter: contrast(1);
     }
 
     50%{
-        filter: hue-rotate(360deg);
+        /* filter: hue-rotate(180deg); */
+        filter: contrast(1);
     }
 }
 
