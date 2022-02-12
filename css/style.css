@@ -317,7 +317,8 @@ section.sec4{
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to top, rgb(4, 4, 77), rgb(135, 231, 240), rgb(6, 6, 136), rgb(255, 145, 0));
+    /* background: linear-gradient(to top, rgb(4, 4, 77), rgb(135, 231, 240), rgb(6, 6, 136), rgb(255, 145, 0)); */
+    background: linear-gradient(to top, rgb(255, 145, 0), rgb(4, 4, 77), rgb(135, 231, 240), rgb(255, 145, 0));
     filter: blur(10px);
 }
 
@@ -328,7 +329,8 @@ section.sec4{
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to top, rgb(4, 4, 77), rgb(135, 231, 240), rgb(6, 6, 136), rgb(255, 145, 0));
+    /* background: linear-gradient(to top, rgb(4, 4, 77), rgb(135, 231, 240), rgb(6, 6, 136), rgb(255, 145, 0)); */
+    background: linear-gradient(to top, rgb(255, 145, 0), rgb(4, 4, 77), rgb(135, 231, 240), rgb(255, 145, 0));
     filter: blur(30px);
 }
 
@@ -354,6 +356,7 @@ section.sec4{
     width: 150px;
     margin: 15px auto;
     background: rgb(4, 4, 77);
+    /* background: rgb(255, 145, 0); */
     align-items: center;
     align-content: center;
     text-align: center;
@@ -373,6 +376,7 @@ section.sec4{
     transition: 0.5s;
     z-index: 0;
     background-color: #fff;
+    /* border: solid 1px lime; */
 }
 
 .img_box img{
@@ -380,6 +384,7 @@ section.sec4{
     height: 100%;
     transition: 0.5s;
     z-index: 0;
+    /* border: solid 1px red; */
 }
 
 .box:hover{
@@ -387,7 +392,12 @@ section.sec4{
 }
 
 .box:hover .img_box{
-    transform: translateY(-10px);
+    /* transform: translateY(-10px); */
+    transform: translateY(-20%);
+}
+
+.box:hover .img_box img{
+    transform: scale(0.5);
 }
 
 .box:hover .img_box img, .box:hover .img_box{
@@ -396,7 +406,7 @@ section.sec4{
 
 
 .box:hover .details{
-    transform: translateY(-65px);
+    transform: translateY(-75%);
 }
 
 .details{
@@ -410,11 +420,16 @@ section.sec4{
     padding: 10px;
     /* z-index: 0; */
     transition: 0.5s;
+    text-align: center;
 }
 
 .details h2{
-    margin: 10px 0 0;
+    /* margin: 10px auto; */
+    margin: auto;
     text-align: center;
+    width: 100%;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
 }
 
 /*-------------------------------------------------------------------------------------------------------*/
